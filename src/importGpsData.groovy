@@ -40,7 +40,7 @@ def apiKey='576e90b0267b5963c37892a032d0821f'
 gpx.rte.rtept.each { point ->
     println point.@lat
     println point.@lon
-  
+    //added comment for git
     def parser = new DateParser()
     println parser.parse(point.time.toString())
 
