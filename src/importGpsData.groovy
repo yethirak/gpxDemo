@@ -40,10 +40,10 @@ def apiKey='576e90b0267b5963c37892a032d0821f'
 gpx.rte.rtept.each { point ->
     println point.@lat
     println point.@lon
-
+  
     def parser = new DateParser()
     println parser.parse(point.time.toString())
-  
+
     //REST query String
     def queryString = "forecast/$apiKey/${point.@lat},${point.@lon},,${point.@time}"
     println queryString
